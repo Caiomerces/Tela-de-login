@@ -1,0 +1,150 @@
+@import "../global/global.css";
+section.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+section.login .quadro {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--cor-branco);
+}
+section.login .quadro .faixa {
+  background-color: var(--cor-principal);
+  width: 900px;
+  height: 150px;
+  box-shadow: 0 0 30px 0 var(--cor-principal);
+  position: absolute;
+  animation: rodarfaixa 20s linear infinite;
+  z-index: 1;
+}
+@keyframes rodarfaixa {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+section.login .quadro .conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--cor-branco);
+  z-index: 2;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+section.login .quadro .conteudo h2 {
+  font-family: Poppins;
+  font-size: 2rem;
+  color: var(--cor-principal);
+  letter-spacing: 10px;
+}
+section.login .quadro .conteudo p {
+  font-family: Poppins;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--cor-cinza-escuro);
+}
+section.login .quadro .conteudo label {
+  text-align: left;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  line-height: 1.5;
+  color: var(--cor-cinza-escuro);
+}
+
+/* Mexendo no span*/
+section.login .quadro .conteudo label span {
+  width: 100%;
+  color: var(--cor-principal);
+}
+
+/*  Personalizando as entrada do formulário */
+
+/* Input */
+section.login .quadro .conteudo input {
+  font-family: Poppins;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--cor-cinza-escuro);
+  width: 100%;
+  padding: 20px 20px 20px 50px;
+  border-radius: 10px;
+  background-color: var(--cor-cinza-claro);
+}
+
+section.login .quadro .conteudo .input {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* Fim do Input */
+
+/* Bolinha*/
+section.login .quadro .conteudo .input .bolinha {
+  width: 15px;
+  height: 15px;
+  background-color: var(--cor-principal);
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  pointer-events: none;
+}
+/* Animação-Bolinha*/
+section.login .quadro .conteudo .input:hover .bolinha {
+  transform: scale(0.8);
+  background-color: var(--cor-cinza-escuro);
+  transition: all 0.3s;
+}
+/* Texto-Intuitivo*/
+section.login .quadro .conteudo .input::placeholder {
+  color: #00000048;
+}
+/* Botão*/
+section.login .quadro .conteudo button {
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  width: 100%;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  background-color: var(--cor-principal);
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+/* Animação-Botão*/
+section.login .quadro .conteudo button:hover {
+  background-color: var(--cor-cinza-escuro);
+}
+/*  Fim Personalizando as entrada do formulário */
+
+/*Parte  Responsiva */
+@media screen and (max-width: 600px) {
+  section.login .quadro .conteudo {
+    padding: 40px 20px;
+  }
+}
