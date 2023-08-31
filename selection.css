@@ -1,0 +1,5 @@
+/* Mudar a cor da seleção no site*/
+::selection {
+  color: #fff;
+  background-color: black;
+}

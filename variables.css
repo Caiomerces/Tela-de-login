@@ -1,0 +1,10 @@
+/* Variáveis do CSS */
+
+/*Padronizando a paleta de cores do site */
+:root {
+  --cor-preto: #000000;
+  --cor-branco: #ffffff;
+  --cor-principal: #ffa600;
+  --cor-cinza-escuro: #494646;
+  --cor-cinza-claro: #dbd8d8;
+}
